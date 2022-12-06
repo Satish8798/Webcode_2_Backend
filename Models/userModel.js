@@ -32,5 +32,5 @@ const userSchema = new Schema({
 });
 
 //creating model for mentor schema
-user = model("users",userSchema);
-module.exports = user;
+userModel = model("users",userSchema);
+module.exports = userModel;

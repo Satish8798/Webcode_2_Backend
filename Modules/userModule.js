@@ -67,6 +67,9 @@ module.exports.login = async (req, res) => {
   //generating json web token and send
   let token = jwt.sign(user.toJSON(),process.env.SECRET_KEY);
 
-  res.send(token);
+  res.send({
+    token,
+    user
+  });
 
 };
